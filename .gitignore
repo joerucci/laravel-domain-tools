@@ -1,0 +1,29 @@
+# Node modules (if ever using front-end tooling)
+node_modules/
+
+# Composer dependencies (should be installed via composer install)
+vendor/
+
+# Laravel specific (in case it's tested as a full app)
+.env
+.phpunit.result.cache
+storage/
+bootstrap/cache/
+
+# PHPUnit coverage output
+coverage/
+
+# Testbench temp Laravel app
+vendor/orchestra/testbench-core/laravel/
+
+# IDE and OS junk
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# Autoload + lock
+composer.lock
+
+# PHPUnit cache
+.phpunit.cache/

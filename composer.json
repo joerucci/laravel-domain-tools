@@ -1,0 +1,36 @@
+{
+    "name": "joerucci/laravel-domain-tools",
+    "description": "This package provides domain-driven design (DDD) support for Laravel applications by enhancing artisan make commands with --domain argument. When used, generated files (like models, casts, events, etc.) are placed into a specific domain folder within your app.",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "Joerucci\\DomainTools\\": "src/",
+            "Joerucci\\DomainTools\\Tests\\": "tests/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\": "tests/Fixtures/App"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^12.10"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Joerucci\\DomainTools\\DomainToolsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require-dev": {
+        "laravel/pint": "^1.22",
+        "nunomaduro/larastan": "^3.4",
+        "orchestra/testbench": "^10.2"
+    }
+}
