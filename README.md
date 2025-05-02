@@ -1,4 +1,5 @@
 # laravel-domain-tools
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/joerucci/laravel-domain-tools.svg?style=flat-square)](https://packagist.org/packages/joerucci/laravel-domain-tools)
 
 Artisan command extensions for organizing Laravel projects by domain.
 
