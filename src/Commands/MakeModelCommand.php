@@ -52,4 +52,14 @@ class MakeModelCommand extends ModelMakeCommand
             '--model' => $this->qualifyClass($this->getNameInput()),
         ]);
     }
+
+    protected function rootNamespace(): string
+    {
+        return 'App\\'.$this->getStudlyDomain().'\\Models\\';
+    }
+
+    protected function getPath($name)
+    {
+        return parent::getPath($this->getStudlyDomain().'\\Models\\'.$name);
+    }
 }

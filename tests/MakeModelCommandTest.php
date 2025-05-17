@@ -10,7 +10,7 @@ class MakeModelCommandTest extends TestCase
             command: 'make:model',
             name: 'User',
             domain: 'Auth',
-            expectedRelativePath: 'User.php'
+            expectedRelativePath: 'Models/User.php'
         );
     }
 }
