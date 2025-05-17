@@ -10,7 +10,7 @@ class MakeEnumCommandTest extends TestCase
             command: 'make:enum',
             name: 'StatusEnum',
             domain: 'Auth',
-            expectedRelativePath: 'StatusEnum.php'
+            expectedRelativePath: 'Enums/StatusEnum.php'
         );
     }
 }
